@@ -7,7 +7,7 @@ Project live on <i>Heroku</i>.
 Below steps to test/use the functionality:<br>
 <b>Step 1</b>: <br>
 Call the API to generate the short URL.<br>
-https://shorten-er.herokuapp.com/short/it?longURL=<input long url> <br>
+https://shorten-er.herokuapp.com/short/it?longURL=[input long url] <br>
 
 
 Sample request: <br>
