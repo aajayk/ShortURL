@@ -11,8 +11,8 @@ const basePath = process.env.BASE_PATH;
 
 app.set("trust proxy", 1);
 const apiLimiter = rateLimit({
-  windowMs: 10 * 60 * 1000, // 15 minutes
-  max: 5,
+  windowMs:  60 * 1000, // 15 minutes
+  max: 15,
   message: "Too many requests, please try again later.",
 });
 
