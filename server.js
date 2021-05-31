@@ -5,9 +5,12 @@ const { nanoid } = require("nanoid");
 require("dotenv").config();
 const MongoClient = require("mongodb").MongoClient;
 const rateLimit = require("express-rate-limit");
+var cors = require("cors");
 
 const app = express();
 const basePath = process.env.BASE_PATH;
+
+app.use(cors());
 
 app.set("trust proxy", 1);
 const apiLimiter = rateLimit({
